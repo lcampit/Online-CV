@@ -10,7 +10,7 @@ import { HiDownload } from 'react-icons/hi';
 
 export default function Intro() {
   return (
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
+    <section className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]' id="home">
       <div className="flex items-center justify-center">
         <div className="relative">
           {/* TODO update with proper image and alt text*/}
