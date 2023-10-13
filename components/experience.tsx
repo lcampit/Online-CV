@@ -1,16 +1,19 @@
-"use client"
+"use client";
 
-import React from 'react'
-import SectionHeading from './section-heading'
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import { experiencesData } from '@/lib/data'
+import React from "react";
+import SectionHeading from "./section-heading";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { experiencesData } from "@/lib/data";
 
 export default function Experience() {
   return (
-    <section id="experience">
+    <section id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My Experience</SectionHeading>
-      <VerticalTimeline lineColor=''>
+      <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
@@ -22,22 +25,24 @@ export default function Experience() {
                 padding: "1.3rem 2rem",
               }}
               contentArrowStyle={{
-                borderRight: "0.4rem solid #9ca3af"
+                borderRight: "0.4rem solid #9ca3af",
               }}
               date={item.date}
               icon={item.icon}
               iconStyle={{
                 background: "white",
-                fontSize: "1.5rem"
+                fontSize: "1.5rem",
               }}
             >
-              <h3 className='font-semibold capitalize'>{item.title}</h3>
-              <p className='font-normal !mt-0'>{item.location}</p>
-              <p className='!font-normal !mt-0 text-gray-700'>{item.description}</p>
+              <h3 className="font-semibold capitalize">{item.title}</h3>
+              <p className="font-normal !mt-0">{item.location}</p>
+              <p className="!font-normal !mt-0 text-gray-700">
+                {item.description}
+              </p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
       </VerticalTimeline>
     </section>
-  )
-} 
+  );
+}
