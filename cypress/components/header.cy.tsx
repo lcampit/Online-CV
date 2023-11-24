@@ -1,10 +1,21 @@
-import React from 'react'
-import Header from '../../components/header'
-
-describe('Header component', () => {
-  it('renders on 720p resolution', () => {
-    // see: https://on.cypress.io/mounting-react
-    cy.viewport(1024, 768)
-    cy.mount_with_context(<Header />)
-  })
-})
+import React from "react";
+import Header from "../../components/header";
+const screenResolutions = [
+  [1920, 1080],
+  [360, 800],
+  [1366, 768],
+  [1280, 720],
+  [1536, 864],
+];
+describe("Header component", () => {
+  screenResolutions.forEach(([width, height]) => {
+    it(
+      "renders on screens with width: " + width + " and height: " + height + "",
+      () => {
+        // see: https://on.cypress.io/mounting-react
+        cy.viewport(width, height);
+        cy.mount_with_context(<Header />);
+      },
+    );
+  });
+});
