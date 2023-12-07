@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
@@ -12,27 +13,37 @@ export default function Contact() {
 
   return (
     <motion.section
-      ref={ref}
       id="contact"
+      ref={ref}
       className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      viewport={{ once: true }}
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      transition={{
+        duration: 1,
+      }}
+      viewport={{
+        once: true,
+      }}
     >
       <SectionHeading>Contact me</SectionHeading>
-      <p className="text-gray-700 -mt-6">
+
+      <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
-        <a href="mailto:example@gmail.com" className="underline">
+        <a className="underline" href="mailto:example@gmail.com">
           example@gmail.com
         </a>{" "}
-        or through the form below.
+        or through this form.
       </p>
 
       <form
-        className="mt-10 flex flex-col"
-        action={async (formData: FormData) => {
+        className="mt-10 flex flex-col dark:text-black"
+        action={async (formData) => {
           const { data, error } = await sendEmail(formData);
+
           if (error) {
             toast.error(error);
             return;
@@ -42,19 +53,19 @@ export default function Contact() {
         }}
       >
         <input
+          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          name="senderEmail"
           type="email"
-          className="px-4 h-14 rounded-lg borderBlack"
-          placeholder="Your Email"
           required
           maxLength={500}
-          name="senderEmail"
+          placeholder="Your email"
         />
         <textarea
-          className="h52 my-3 rounded-lg borderBlack p-4"
-          placeholder="Your Message"
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          name="message"
+          placeholder="Your message"
           required
           maxLength={5000}
-          name="message"
         />
         <SubmitBtn />
       </form>
