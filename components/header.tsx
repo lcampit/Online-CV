@@ -34,7 +34,7 @@ export default function Header() {
                   {
                     "text-gray-950 dark:text-gray-200":
                       activeSection === link.name,
-                  },
+                  }
                 )}
                 href={link.hash}
                 onClick={() => {
