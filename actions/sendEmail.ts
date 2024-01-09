@@ -6,6 +6,7 @@ import { validateString, getErrorMessage } from "@/lib/utils";
 import ContactFormEmail from "@/email/contact-form-email";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+const personal_email = process.env.PERSONAL_EMAIL ?? "";
 
 export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
@@ -27,7 +28,7 @@ export const sendEmail = async (formData: FormData) => {
   try {
     data = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
-      to: "leonardo932.campitelli+resend@gmail.com",
+      to: personal_email,
       subject: "Message from contact form",
       reply_to: senderEmail,
       react: React.createElement(ContactFormEmail, {
