@@ -19,30 +19,24 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        I&apos;m a <span className="font-bold">Computer Engineer</span> paired
+        with great curiosity. My main desire is to develop useful programs and
+        applications to solve problems and needs.{" "}
+        <span className="font-bold">I love coding</span> and its problem solving
+        aspect. As of now I&apos;m working as a Software Engineer in Italy. I
+        love to discover new technologies and tools to help me become a better
+        Developer. With time, I&apos;ve developed a soft spot for architecture
+        design, infrastructure and everything DevOps related.
       </p>
 
       <p>
         <span className="italic">When I&apos;m not coding</span>, I enjoy
-        playing video games, watching movies, and playing with my dog. I also
-        enjoy <span className="font-medium">learning new things</span>. I am
-        currently learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I&apos;m
-        also learning how to play the guitar.
+        playing video games, watching movies and having lonk walks. I also enjoy{" "}
+        <span className="font-bold">learning new things</span>. I am currently
+        learning about{" "}
+        <span className="font-bold">Microservices Architecture</span> and Linux
+        Server management, as well as everything related to the Command Line
+        Interface.
       </p>
     </motion.section>
   );
