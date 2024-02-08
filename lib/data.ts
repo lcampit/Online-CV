@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import dotfiles from "@/public/dotfiles.png";
+import onlinecv from "@/public/onlinecv.png";
+import thesis from "@/public/thesis.png";
 
 export const links = [
   {
@@ -75,21 +75,21 @@ export const projectsData = [
     description:
       "My personal configuration for everything that is on my machine, featuring automated installation, testing and documentation",
     tags: ["Config", "Linux", "Shell", "Shell Script", "CI/CD"],
-    imageUrl: corpcommentImg,
+    imageUrl: dotfiles,
   },
   {
-    title: "Online-Portfolio",
+    title: "Online CV",
     description:
       "The very same website you are right on, built with React, TypeScript, Next.js and Tailwind, completed with Cypress testing",
     tags: ["React", "TypeScript", "Next.js", "Tailwind"],
-    imageUrl: rmtdevImg,
+    imageUrl: onlinecv,
   },
   {
     title: "Nomen Omen",
     description:
       "Neural Network model able to translate binary code into meaningful function names, helping reverse engineers in analyzing unknown executables.",
     tags: ["Python", "NLP", "Deep Learning", "Machine Learning"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: thesis,
   },
 ] as const;
 
