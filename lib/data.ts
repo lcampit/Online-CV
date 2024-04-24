@@ -1,10 +1,10 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import dotfiles from "@/public/dotfiles.png";
 import onlinecv from "@/public/onlinecv.png";
 import thesis from "@/public/thesis.png";
+import thoughtsyncLogo from "@/public/thoughtsyncLogo.png";
 
 export const links = [
   {
@@ -35,12 +35,20 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Bachelor Degree as Computer Engineer",
+    title: "Software Engineer @ Moveax",
     location: "Rome, Italy",
     description:
-      "I graduated as a Computer Engineer at La Sapienza University of Rome. My Thesis describes Malware Analysis using Neural Networks embeddings.\nI completed the Master Excellence Program, consisting of extra project activities supported by a professor and his team, developing Natural Language Processing tools for semantic analysis",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "Software Engineer for Moveax, focusing on Microservices applications, Linux servers, DevOps and fullstack development",
+    icon: React.createElement(FaReact),
+    date: "2023 - present",
+  },
+  {
+    title: "Software Engineer @ Sara Assicurazioni",
+    location: "Rome, Italy - Berlin, Germany",
+    description:
+      "Software Engineer in an Insurance Company, focusing on Cloud platforms as Salesforce and AWS.\nPartecipated at the Salesforce Bootcamp in Berlin, a series of intense studies and courses on the Salesforce platform where I obtained the Admin and Platform Developer certifications",
+    icon: React.createElement(FaReact),
+    date: "2022 - 2023",
   },
   {
     title:
@@ -52,24 +60,23 @@ export const experiencesData = [
     date: "2020 - 2022",
   },
   {
-    title: "Software Engineer @ Sara Assicurazioni",
-    location: "Rome, Italy - Berlin, Germany",
-    description:
-      "Software Engineer in an Insurance Company, focusing on Cloud platforms as Salesforce and AWS.\nPartecipated at the Salesforce Bootcamp in Berlin, a series of intense studies and courses on the Salesforce platform where I obtained the Admin and Platform Developer certifications",
-    icon: React.createElement(FaReact),
-    date: "2022 - 2023",
-  },
-  {
-    title: "Software Engineer @ Moveax",
+    title: "Bachelor Degree as Computer Engineer",
     location: "Rome, Italy",
     description:
-      "Software Engineer for Moveax, focusing on Microservices applications, Linux servers, DevOps and fullstack development",
-    icon: React.createElement(FaReact),
-    date: "2023 - present",
+      "I graduated as a Computer Engineer at La Sapienza University of Rome. My Thesis describes Malware Analysis using Neural Networks embeddings.\nI completed the Master Excellence Program, consisting of extra project activities supported by a professor and his team, developing Natural Language Processing tools for semantic analysis",
+    icon: React.createElement(LuGraduationCap),
+    date: "2019",
   },
 ] as const;
 
 export const projectsData = [
+  {
+    title: "ThoughtSync",
+    description:
+      "A CLI tool to edit notes from the terminal, built in Go. Write down thoughts and sync them with Git",
+    tags: ["GoLang", "CLI", "Git", "Software Design", "Testing"],
+    imageUrl: thoughtsyncLogo,
+  },
   {
     title: "Dotfiles",
     description:
