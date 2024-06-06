@@ -5,6 +5,9 @@ import dotfiles from "@/public/dotfiles.png";
 import onlinecv from "@/public/onlinecv.png";
 import thesis from "@/public/thesis.png";
 import thoughtsyncLogo from "@/public/thoughtsyncLogo.png";
+import atomicHabits from "@/public/atomicHabits.jpg";
+import microservicesPatterns from "@/public/microservicesPatterns.jpg";
+import kubernetesInAction from "@/public/kubernetesInAction.jpg";
 
 export const links = [
   {
@@ -26,6 +29,10 @@ export const links = [
   {
     name: "Experience",
     hash: "#experience",
+  },
+  {
+    name: "Recent Readings",
+    hash: "#lastreadings",
   },
   {
     name: "Contact",
@@ -80,7 +87,7 @@ export const projectsData = [
   {
     title: "Dotfiles",
     description:
-      "My personal configuration for everything that is on my machine, featuring automated installation, testing and documentation",
+      "Configuration files for everything that runs on my development machine, packed up in a documented repository with automated installation and testing",
     tags: ["Config", "Linux", "Shell", "Shell Script", "CI/CD"],
     imageUrl: dotfiles,
   },
@@ -101,6 +108,7 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  "Backend Development",
   "Python",
   "C",
   "C++",
@@ -118,19 +126,29 @@ export const skillsData = [
   "Linux",
   "Docker",
   "Containerization",
+  "Kubernetes",
   "CI/CD",
   "PostgreSQL",
   "MySQL",
   "MongoDB",
   "Redux",
   "GraphQL",
-  "Grpc",
+  "Protobuf",
+  "gRPC",
   "REST",
   "Web Development",
   "Express",
   "Framer Motion",
   "Bash Scripts",
   "AWS",
+  "DevOps",
+  "AI modeling and development",
+  "Tensorflow",
+  "Scikit-learn",
+  "PyTorch",
+  "Keras",
+  "Pandas",
+  "Numpy",
 ] as const;
 
 export const additionalSkillsData = [
@@ -138,4 +156,28 @@ export const additionalSkillsData = [
   "Italian",
   "Spanish",
   "Driving License & Property Car",
+] as const;
+
+export const lastReads = [
+  {
+    title: "Kubernetes In Action",
+    description:
+      "A detailed description of what is and how to use Kubernetes, including best practices and tips",
+    tags: ["Kubernetes", "DevOps"],
+    imageUrl: kubernetesInAction,
+  },
+  {
+    title: "Microservices Patterns",
+    description:
+      "A detailed description of patterns and ToDos when creating a microservices application, featuring real coding samples",
+    tags: ["Microservices Architecture", "Application Design", "Containers"],
+    imageUrl: microservicesPatterns,
+  },
+  {
+    title: "Atomic Habits",
+    description:
+      "A self improvement book on how to create and stick to good habits",
+    tags: ["Self improvement", "Habits"],
+    imageUrl: atomicHabits,
+  },
 ] as const;
