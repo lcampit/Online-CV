@@ -170,7 +170,7 @@ export const lastReads = [
     title: "Microservices Patterns",
     description:
       "A detailed description of patterns and ToDos when creating a microservices application, featuring real coding samples",
-    tags: ["Microservices Architecture", "Application Design", "Containers"],
+    tags: ["Microservices Architecture", "Application Design"],
     imageUrl: microservicesPatterns,
   },
   {
