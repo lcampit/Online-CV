@@ -87,7 +87,7 @@ export const projectsData = [
   {
     title: "Dotfiles",
     description:
-      "Configuration files for everything that runs on my development machine, packed up in a documented repository with automated installation and testing",
+      "Configuration files for everything that runs on my development machine, packed up in a documented repository with automated installation",
     tags: ["Config", "Linux", "Shell", "Shell Script", "CI/CD"],
     imageUrl: dotfiles,
   },
@@ -102,7 +102,7 @@ export const projectsData = [
     title: "Nomen Omen",
     description:
       "Neural Network model able to translate binary code into meaningful function names, helping reverse engineers in analyzing unknown executables.",
-    tags: ["Python", "NLP", "Deep Learning", "Machine Learning"],
+    tags: ["Python", "NLP", "Deep Learning"],
     imageUrl: thesis,
   },
 ] as const;
