@@ -14,7 +14,7 @@ export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
-  const experienceYears = new Date().getFullYear() - 2022;
+  const experienceYears = new Date().getFullYear() - 2021;
   return (
     <section
       ref={ref}
@@ -63,10 +63,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I&apos;m Leonardo.</span> I&apos;m a{" "}
+        <span className="font-bold">Hello, I&apos;m Leonardo.</span> I&apos;m a
+        {" "}
         <span className="font-bold">Software Engineer</span> with{" "}
-        <span className="font-bold"> {experienceYears} years</span> of
-        experience. I enjoy coding and solving problems.
+        <span className="font-bold">{experienceYears} years</span>{" "}
+        of experience. I enjoy coding and solving problems.
       </motion.h1>
 
       <motion.div

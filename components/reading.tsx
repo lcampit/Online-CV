@@ -1,18 +1,18 @@
 "use client";
 
 import { useRef } from "react";
-import { projectsData } from "@/lib/data";
+import { lastReads } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-type ProjectProps = (typeof projectsData)[number];
+type LastReadProps = (typeof lastReads)[number];
 
-export default function Project({
+export default function Reading({
   title,
   description,
   tags,
   imageUrl,
-}: ProjectProps) {
+}: LastReadProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -50,9 +50,9 @@ export default function Project({
 
         <Image
           src={imageUrl}
-          alt="Project I worked on"
+          alt="a book I read recently"
           quality={95}
-          className="absolute hidden sm:block top-[5.1rem] -right-[8rem] w-[28.25rem] rounded-t-lg shadow-2xl
+          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition 
         group-hover:scale-[1.04]
         group-hover:-translate-x-3
@@ -63,7 +63,7 @@ export default function Project({
         group-even:group-hover:translate-y-3
         group-even:group-hover:rotate-2
 
-        group-even:right-[initial] group-even:-left-[8rem]"
+        group-even:right-[initial] group-even:-left-40"
         />
       </section>
     </motion.div>

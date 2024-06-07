@@ -19,24 +19,25 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I&apos;m a <span className="font-bold">Computer Engineer</span> paired
-        with great curiosity. My main desire is to develop useful programs and
-        applications to solve problems and needs.{" "}
-        <span className="font-bold">I love coding</span> and its problem solving
-        aspect. As of now I&apos;m working as a Software Engineer in Italy. I
-        love to discover new technologies and tools to help me become a better
-        Developer. With time, I&apos;ve developed a soft spot for architecture
-        design, infrastructure and everything DevOps related.
+        I&apos;m a <span className="font-bold">Computer Engineer</span>{" "}
+        paired with great curiosity. My main desire is to develop useful
+        programs and applications to solve problems and needs.{" "}
+        <span className="font-bold">I love coding</span>{" "}
+        and its problem solving aspect. As of now I&apos;m working as a Software
+        Engineer in Italy. I love to discover new technologies and tools to help
+        me become a better Developer. With time, I&apos;ve developed a soft spot
+        for architecture design, infrastructure and everything DevOps related.
       </p>
 
       <p>
-        <span className="italic">When I&apos;m not coding</span>, I enjoy
-        playing video games, watching movies and having lonk walks. I also enjoy{" "}
-        <span className="font-bold">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-bold">Microservices Architecture</span> and Linux
-        Server management, as well as everything related to the Command Line
-        Interface.
+        <span className="italic">When I&apos;m not coding</span>, I spend my
+        time playing video games, watching movies and having lonk walks. I also
+        enjoy <span className="font-bold">learning new things</span>{" "}
+        and I&apos;m constanlty keeping myself updated with newsletters and
+        development-related blogs. I am currently learning about{" "}
+        <span className="font-bold">Kubernetes</span>{" "}
+        and Linux Server management, as well as everything related to the
+        Command Line Interface.
       </p>
     </motion.section>
   );
