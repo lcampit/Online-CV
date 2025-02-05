@@ -42,12 +42,20 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Software Engineer @ Capgemini",
+    location: "Rome, Italy",
+    description:
+      "Software Engineer for Capgemini, focusing on GoLang Microservices applications, Linux servers, Kubernetes and DevOps",
+    icon: React.createElement(FaReact),
+    date: "2025 - Present",
+  },
+  {
     title: "Software Engineer @ Moveax",
     location: "Rome, Italy",
     description:
       "Software Engineer for Moveax, focusing on Microservices applications, Linux servers, DevOps and fullstack development",
     icon: React.createElement(FaReact),
-    date: "2023 - present",
+    date: "2023 - 2025",
   },
   {
     title: "Software Engineer @ Sara Assicurazioni",
