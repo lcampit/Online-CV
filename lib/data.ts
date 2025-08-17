@@ -80,7 +80,7 @@ export const experiencesData = [
     description:
       "I graduated as a Computer Engineer at La Sapienza University of Rome. My Thesis describes Malware Analysis using Neural Networks embeddings.\nI completed the Master Excellence Program, consisting of extra project activities supported by a professor and his team, developing Natural Language Processing tools for semantic analysis",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2016 - 2019",
   },
 ] as const;
 

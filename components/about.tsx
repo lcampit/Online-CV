@@ -31,9 +31,9 @@ export default function About() {
 
       <p>
         <span className="italic">When I&apos;m not coding</span>, I spend my
-        time playing video games, watching movies and having lonk walks. I also
+        time playing video games, watching movies and having long walks. I also
         enjoy <span className="font-bold">learning new things</span>{" "}
-        and I&apos;m constanlty keeping myself updated with newsletters and
+        and I&apos;m constantly keeping myself updated with newsletters and
         development-related blogs. I am currently learning about{" "}
         <span className="font-bold">Kubernetes</span>{" "}
         and Linux Server management, as well as everything related to the
