@@ -9,13 +9,16 @@ import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
 
 export default function Home() {
+  const enableGitHubActivity =
+    process.env.NEXT_PUBLIC_ENABLE_GITHUB_CONTRIBUTIONS === "true";
+
   return (
     <main className="flex flex-col items-center px-4">
       <Intro />
       <SectionDivider />
       <About />
       <Projects />
-      <GithubContributions />
+      {enableGitHubActivity && <GithubContributions />}
       <Skills />
       <Experience />
       <LastReadings />

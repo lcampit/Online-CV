@@ -11,7 +11,10 @@ To enable the GitHub contributions feature, you need to set up the following env
 ```env
 GITHUB_TOKEN=your_github_personal_access_token
 GITHUB_USERNAME=your_github_username
+NEXT_PUBLIC_ENABLE_GITHUB_CONTRIBUTIONS=true
 ```
+
+Set NEXT_PUBLIC_ENABLE_GITHUB_CONTRIBUTIONS to "true" to display the GitHub Activity section and its navigation item. Omit it or set to "false" to hide them.
 
 ### GitHub Personal Access Token Setup
 

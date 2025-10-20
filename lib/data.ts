@@ -9,6 +9,9 @@ import atomicHabits from "@/public/atomicHabits.jpg";
 import microservicesPatterns from "@/public/microservicesPatterns.jpg";
 import kubernetesInAction from "@/public/kubernetesInAction.jpg";
 
+const enableGitHubActivity =
+  process.env.NEXT_PUBLIC_ENABLE_GITHUB_CONTRIBUTIONS === "true";
+
 export const links = [
   {
     name: "Home",
@@ -22,10 +25,14 @@ export const links = [
     name: "Projects",
     hash: "#projects",
   },
-  {
-    name: "GitHub Activity",
-    hash: "#githubactivity",
-  },
+  ...(enableGitHubActivity
+    ? [
+        {
+          name: "GitHub Activity",
+          hash: "#githubactivity",
+        },
+      ]
+    : []),
   {
     name: "Skills",
     hash: "#skills",
@@ -42,7 +49,7 @@ export const links = [
     name: "Contact",
     hash: "#contact",
   },
-] as const;
+];
 
 export const experiencesData = [
   {
