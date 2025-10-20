@@ -27,11 +27,11 @@ export const links = [
   },
   ...(enableGitHubActivity
     ? [
-        {
-          name: "GitHub Activity",
-          hash: "#githubactivity",
-        },
-      ]
+      {
+        name: "Activity",
+        hash: "#activity",
+      },
+    ]
     : []),
   {
     name: "Skills",

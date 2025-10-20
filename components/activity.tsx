@@ -19,7 +19,7 @@ type ApiResponse = {
 };
 
 export default function GithubContributions() {
-  const { ref } = useSectionInView("GitHub Activity", 0.5);
+  const { ref } = useSectionInView("Activity", 0.5);
   const { theme } = useTheme();
   const [data, setData] = useState<ContributionData[] | null>(null);
   const [totalContributions, setTotalContributions] = useState<number>(0);
@@ -60,14 +60,14 @@ export default function GithubContributions() {
   return (
     <motion.section
       ref={ref}
-      id="githubactivity"
+      id="activity"
       className="mb-28 scroll-mt-28 text-center sm:mb-40"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
     >
       <SectionHeading>GitHub Activity</SectionHeading>
-      
+
       <div className="max-w-[53rem] mx-auto mb-8">
         <p className="text-gray-700 dark:text-white/70 leading-relaxed">
           Track my coding journey through my GitHub contribution activity.

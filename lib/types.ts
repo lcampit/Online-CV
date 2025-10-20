@@ -2,7 +2,7 @@ export type SectionName =
   | "Home"
   | "About"
   | "Projects"
-  | "GitHub Activity"
+  | "Activity"
   | "Skills"
   | "Experience"
   | "Recent Readings"
